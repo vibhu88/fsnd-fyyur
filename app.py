@@ -302,8 +302,6 @@ def show_artist(artist_id):
     "start_time": format_datetime(str(show.start_time))
   })
   
-  # Fields website, image_link, seeking description and seeking venue are only implemented in Model and Controllers
-  # And are not implemented in View as they are optional. Hence fetch default values from database.
   data = {
         'id': artist.id,
         'name': artist.name,
